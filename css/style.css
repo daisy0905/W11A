@@ -1,0 +1,12 @@
+#body {
+    position: relative;
+}
+
+#peppaPig {
+    width: 150px;
+    height: auto;
+}
+
+#title {
+    text-align: left;
+}
