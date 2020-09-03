@@ -1,7 +1,7 @@
 //The user hovers their mouse over an element
 function characterChange() {
     imgElement.style.width = "450px";
-    imgElement.style.transform = "rotate(180deg)";
+    imgElement.style.transform = "rotate(360deg)";
     imgElement.style.transition = "width 2s, height 2s, transform 4s";
 }
 var imgElement = document.getElementById("peppaPig");
@@ -37,13 +37,12 @@ bodyElement.addEventListener("keypress", function(eventDetails) {
 //application of setInterval and clearInterval
 var pElement = document.getElementById("description");
 pElement.style.color = "red";
-let i = 0;
-
-let iInterval = setInterval(function() {
+var i = 0;
+var altInterval = setInterval(function() {
     i++;
     console.log(i);
     if(i == 50) {
-        clearInterval(iInterval);
+        clearInterval(altInterval);
     } else {
         console.log(pElement.style.color);
         if(pElement.style.color === "red") {
